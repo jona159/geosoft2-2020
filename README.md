@@ -1,10 +1,12 @@
 # Geosoftware II at ifgi - WiSe 2020/11
 
-**TBA**
+**Open Earth Observation Data Processing**
 
 Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/)
 
-[Learnweb course](TBA)
+[LSF/QISPOS](https://studium.uni-muenster.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=324127&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
+
+[Learnweb course](https://xsso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=47675)
 
 ## Initial training resources
 
@@ -12,6 +14,8 @@ Handouts for presentations on technical background and concepts required for thi
 These handouts are the core of the preparation of a topic by each student/pair of students.
 The handout should be prepared in a manner so that fellow students can use it as a starting point for getting up to speed on the new topics and making decisions during their project work.
 The presenting students remain _experts_ on the topics for future questions and are very welcome to update the documents in this repository during the course.
+
+**Due date**: November 4th, 2020, 14:00 hrs CET.
 
 ### Process
 
