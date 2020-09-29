@@ -45,12 +45,14 @@ The presenting students remain _experts_ on the topics for future questions and 
 The evaluation is conducted based on the content of the handout, the presentation itself, and the discussion afterwards during the course.
 Be prepared for questions by your fellow students and the teachers, but also prepare some additional content or questions yourself so that you can stick to (= fill up completely) your presentation time slot.
 
-### Topics
+### Topics & content
 
 Make sure you cover at least the mentioned keywords.
 More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.
 
-- TBA
+See [https://github.com/Geosoft2/geosoft2-2020/issues?q=is%3Aissue+is%3Aopen+label%3Atopic](https://github.com/Geosoft2/geosoft2-2020/issues?q=is%3Aissue+is%3Aopen+label%3Atopic).
+
+Please provide a draft of the covered content or any questions as soon as possible through commenting on the respective topic's issue, to retrieve feedback and adjust before you spend too much effort.
 
 ## Further resources
 
