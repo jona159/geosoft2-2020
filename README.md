@@ -2,7 +2,7 @@
 
 **Open Earth Observation Data Processing**
 
-Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/)
+Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/), [@DaChro](https://github.com/DaChro)
 
 [LSF/QISPOS](https://studium.uni-muenster.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=324127&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
@@ -53,6 +53,16 @@ More is better, but only really better if you evaluate alternatives, phrase opin
 See [https://github.com/Geosoft2/geosoft2-2020/issues?q=is%3Aissue+is%3Aopen+label%3Atopic](https://github.com/Geosoft2/geosoft2-2020/issues?q=is%3Aissue+is%3Aopen+label%3Atopic).
 
 Please provide a draft of the covered content or any questions as soon as possible through commenting on the respective topic's issue, to retrieve feedback and adjust before you spend too much effort.
+
+## Individual reports
+
+After the submission of the final project material, each student writes an individual report.
+This is to aptly grade individual contributions to the project work, which ideally is reflected by the student's commits (or at least [co-authored commits](https://github.blog/2018-01-29-commit-together-with-co-authors/) to the code repository (because it is a programming course), but sometimes also takes other forms.
+The report is written from the personal perspective, includes the following contents/sections, and is submitted as a single document in PDF format via LearnWeb which is at most 3 DIN-A4 pages.
+
+- _contributions_ in the form of commented pull requests (or commits) of most relevant contributions, incl. noteworthy lessons learned or challenges
+- _learning achievements_, i.e., most important lessons learned during the course, be they practical or organisational
+- _role(s) in the team_ taken during the course of the semester, potentially connected with the leanings and contributions
 
 ## Further resources
 
