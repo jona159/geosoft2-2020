@@ -34,7 +34,16 @@
             ```
             pip install pytest-xdist
             ```
-      * 
+      * _Ausführen der Tests mit:_
+          ```
+          pytest -n auto
+          ```
+          _oder_
+          ```
+          pytest -n 2
+          ``` 
+          
+      
  1. **Test Suites**
 
  1. **Most Important CLI Instructions**
