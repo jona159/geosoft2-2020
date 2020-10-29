@@ -30,7 +30,10 @@
  1. **Parallel Tests**
       * _Tests sollen gleichzeitig laufen, um Zeit bei der Ausführung zu gewinnen_
       * _xdist plugin für pytest installieren_
-         * _Installation über pip install pytest-xdist_
+         * _Installation über:_
+            ```
+            pip install pytest-xdist
+            ```
       * 
  1. **Test Suites**
 
