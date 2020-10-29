@@ -14,8 +14,17 @@
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
 ## Unit Tests vs Integration Tests
  * __Unit Tests__
- 
+   * _Einzelne Codeeinheit die getestet werden soll (z.B. Funktion)_
+   * _Testen auf dem niedrigsten Level_
+   * _Simpler, schneller Entwurf_
+   * _Reduziert Bugs, schnelleres Debugging_
+   * _Tests können auch zur Dokumentation dienen_
+   * _stellt die korrekte Implementierung der vorher festgelegten Bedingungen sicher_
+   * _Ursache der falschen Implementierung wird schnell ersichtlich_
+   
  * __Integration Tests__
+   * _Zusammenhängende Systemkomponenten werden auf erfolgreiches Zusammenwirken getestet_
+   * _Module folgen dem gewünschten Interaktionsprotokoll_
 ## pytest
  1. **Parallel Tests**
 
