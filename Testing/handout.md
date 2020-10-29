@@ -24,10 +24,14 @@
    
  * __Integration Tests__
    * _Zusammenhängende Systemkomponenten werden auf erfolgreiches Zusammenwirken getestet_
-   * _Module folgen dem gewünschten Interaktionsprotokoll_
+   * _Dabei sollen Module dem gewünschten Interaktionsprotokoll folgen_
 ## pytest
+* Framework zum einfachen Erstellen von skalierbaren Tests
  1. **Parallel Tests**
-
+      * _Tests sollen gleichzeitig laufen, um Zeit bei der Ausführung zu gewinnen_
+      * _xdist plugin für pytest installieren_
+         * _Installation über pip install pytest-xdist_
+      * 
  1. **Test Suites**
 
  1. **Most Important CLI Instructions**
