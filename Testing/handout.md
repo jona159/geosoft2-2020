@@ -29,7 +29,7 @@
 * Framework zum einfachen Erstellen von skalierbaren Tests
  1. **Parallel Tests**
       * _Tests sollen gleichzeitig laufen, um Zeit bei der Ausführung zu gewinnen_
-      * _xdist plugin für pytest installieren_
+      * __xdist__ _plugin für pytest installieren_
          * _Installation über:_
             ```
             pip install pytest-xdist
@@ -60,11 +60,26 @@
      * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
      * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
      * einzelne Tests innerhalb eines Files lassen sich mit *pytest* + *Test-File* + *Testfunktionsname* ausführen
-     * 
+     
  1. **temp dirs/files**
 
  1. **fixtures**
- 
- 1. **mocking**
-
+     * beschreibt die Umgebung in welcher der Test läuft, z.B. eine Datenbank
+ 1. **mocking/patching (engl. Mock=Attrape)**
+     * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
+        Abfrage durchführen möchte weil diese das Testen stark verlangsamen würde_
+     * weitere Anwendungsbereiche von mocking: 
+        * _das zu testende Objekt liefert nicht-deterministische Ergebnisse, bspw: Uhrzeit_
+        * _das echte Objekt existiert noch gar nicht_
+        * _schwierig auslösbares Verhalten_
+        (bei Integrationstest ist mocking normalerweise nicht notwendig)
+     * die wichtigsten Mocking-Typen: 
+       * _Dummy: Objekt, das weitergereicht, aber nicht benutzt wird_
+       * _Fake: Objekt mit eingeschränkter Implementierung_
+       * _Mock: Objekt das bei Funktionsaufrufen mit übergebenen Werten eine Rückgabe liefert (erfordert die Verwendung eines mocking-Frameworks)_
+     * Pytest Mocking-Framework: __Pytest-Mock_
+       Installation über: 
+       ```
+       pip install pytest-mock
+       ```
  1. **test cache**
