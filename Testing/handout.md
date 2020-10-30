@@ -191,3 +191,4 @@ pip install -U pytest
      ```
      pytest --clearcache
      ```
+     * [Pytest Cache](https://pypi.org/project/pytest-cache/#:~:text=pytest%2Dcache%201.0&text=cache%20object%20which%20helps%20sharing,from%20the%20last%20run%20first.)
