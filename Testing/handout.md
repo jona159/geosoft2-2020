@@ -68,6 +68,8 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
 pip install -U pytest
 ```
 * [Pytest Dokumentation](https://docs.pytest.org/en/stable/contents.html)
+* [Pytest Tutorial Youtube 1 Std](https://www.youtube.com/watch?v=bbp_849-RZ4)
+* [Pytest Tutorial Youtube 20min](https://www.youtube.com/watch?v=byaxg00Gf9I)
  1. **Parallel Tests**
       * _Tests sollen gleichzeitig auf verschiedenen Systemen laufen, um Zeit bei der Ausführung zu gewinnen_
       * _Bei unterschiedlichen Software-Versionen prüft man auf Konsistenz und mögliche auftretende Probleme_
@@ -123,7 +125,7 @@ pip install -U pytest
       ```
       * Über das __raise-statement__ kann man eine bestimmte Exception erzwingen (im Beispiel oben: _ValueError_)
          * Quelle: [raise-statement](https://docs.python.org/3/tutorial/errors.html)
-      * Das __with-statement__ ersetzt COde, der sonst mit __try__...__finally__ geschrieben werden würde
+      * Das __with-statement__ ersetzt Code, der sonst mit __try__...__finally__ geschrieben werden würde
         * Quelle [with-statement](https://docs.python.org/2.5/whatsnew/pep-343.html)
       * Beispiel: [Assertion für erwartete Exception](https://docs.pytest.org/en/3.0.1/assert.html) 
       ``` 
