@@ -107,6 +107,7 @@ pip install -U pytest
     * pytest --help oder pytest -h _(Hilfeaufruf)_
     * pytest -x _(stoppt Testvorgang nachdem der erste Test fehlschlägt)_
     * pytest --maxfail=x _(stoppt Testvorgang nachdem der x-te Test fehlschlägt)_
+    * pytest --lf _(führt die letzten fehlgeschlagenen Tests aus)_
     * pytest exampletest_mod.py _(führt Tests im angegebenen Dokument aus)_
     * pytest testing/ _(führt Tests im angebenen Ordner aus)_
     * __Quelle__:
@@ -145,10 +146,18 @@ pip install -U pytest
      * Quelle (Kapitel _Running Tests_): [pytest Quickstart](https://books.google.de/books?hl=de&lr=&id=aB9sDwAAQBAJ&oi=fnd&pg=PP1&dq=pytest+testsuite&ots=dEzwW_4us2&sig=e9VJktln_8igpFiEM5q4CAYkKwQ#v=onepage&q=pytest%20testsuite&f=false)
      
  1. **fixtures**
-     * beschreibt die Umgebung in welcher der Test läuft, z.B. eine Datenbank
+     * Ein fixture ist die Umgebung in welcher der Test läuft, bspw. eine Datenbank 
+       * Quelle: [codemaven.com](https://code-maven.com/temporary-files-and-directory-for-pytest)
+     * fixtures initialisieren Testfunktionen als übergebene Argumente, sodass die Tests verlässlicher ausführbar, konsistenter und leichter wiederholbar werden
+     * fixtures haben explizite Namen, sind modular und skalierbar
+     * fixture definieren mit @pytest.fixture (_optional mit Parametern ,bspw. : @pytest.fixture(scope=module)_)
+     * In pytest sind bereits eine Reihe von fixtures inbegriffen: [pytest fixtures](https://docs.pytest.org/en/stable/fixture.html)
+       
+       
   1. **temp dirs/files**
       * [temporary directories and files](https://docs.pytest.org/en/stable/tmpdir.html)
       * __tmpdir__: fixture zum standardisierten Erstellen von temporary directories 
+      * __tmp_path__ : fixture zum Erstellen eines eindeutigen temporary directory
  1. **mocking/patching (engl. Mock=Attrape)**
      * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
         Abfrage durchführen möchte weil diese das Testen stark verlangsamen würde_
@@ -169,3 +178,16 @@ pip install -U pytest
        ```
       * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606) 
  1. **test cache**
+     * Pytest Cache-Framework: __Pytest-Cache__
+     * Installation: 
+     ```
+     pip install pytest-cache
+     ```
+     * Inhalt des Cache anschauen: 
+     ```
+     pytest --cache
+     ```
+     * Cache leeren:
+     ```
+     pytest --clearcache
+     ```
