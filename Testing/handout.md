@@ -96,6 +96,9 @@ pip install -U pytest
       
       
  1. **Test Suites**
+     * Eine Test Suite beschreibt im Detail eine Menge von Testfällen, sowie deren genauen Anwendungsziele [Test Suite Wikipedia](https://en.wikipedia.org/wiki/Test_suite)
+     * pytest kann für die meisten bereits existierenden Test Suites verwendet werden
+     * [Using pytest with an existing test suite](https://docs.pytest.org/en/latest/existingtestsuite.html)     
 
  1. **Most Important CLI Instructions**
     * pytest _(führt alle Tests im cd aus)_
