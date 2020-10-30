@@ -134,10 +134,10 @@ pip install -U pytest
           1 / 0
        ```
    1. **paths/testdata/testfiles**
-     * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
-     * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
-     * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
-     * einzelne Tests innerhalb eines Files lassen sich mit *pytest* + *Test-File* + *Testfunktionsname* ausführen
+          * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
+          * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
+          * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
+          * einzelne Tests innerhalb eines Files lassen sich mit *pytest* + *Test-File* + *Testfunktionsname* ausführen
      
  1. **temp dirs/files**
 
