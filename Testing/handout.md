@@ -60,7 +60,7 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
    * _Zusammenhängende Systemkomponenten werden auf erfolgreiches Zusammenwirken getestet_
    * _Dabei sollen Module dem gewünschten Interaktionsprotokoll folgen_
  * Quelle: 
-    *[Stackoverflow](https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests)
+    * [Stackoverflow](https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests)
 ## pytest
 * Framework zum einfachen Erstellen von skalierbaren Tests
  1. **Parallel Tests**
