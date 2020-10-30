@@ -27,7 +27,7 @@
    * _Tests können auch zur Dokumentation dienen_
    * _stellt die korrekte Implementierung der vorher festgelegten Bedingungen sicher_
    * _Ursache der falschen Implementierung wird schnell ersichtlich_
-  * Beispiel QUnit aus GeoSoft1: 
+  * Beispiel aus GeoSoft1 [QUnit](https://github.com/streuselcake/jslab/blob/master/utils/unittest/qunit/test.js): 
   ```
   // is fair coin?
 QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
