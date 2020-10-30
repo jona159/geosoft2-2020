@@ -14,10 +14,10 @@
     * _gute Wartbarkeit und Qualität (kein ungetesteter Code, saubere Struktur, Minimierung der Redundanzen)_
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
     
-* Quellen: 
- * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0)
- * [Einführung in TDD](https://medium.com/hackernoon/introduction-to-test-driven-development-tdd-61a13bc92d92)
- * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/)    
+* __Quellen:__ 
+    * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0)
+    * [Einführung in TDD](https://medium.com/hackernoon/introduction-to-test-driven-development-tdd-61a13bc92d92)
+    * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/)    
 ## Unit Tests vs Integration Tests
  * __Unit Tests__
    * _Einzelne Codeeinheit die getestet werden soll (z.B. Funktion)_
