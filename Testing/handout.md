@@ -121,7 +121,17 @@ pip install -U pytest
         validate_age(-1)
        
       ```
- 1. **paths/testdata/testfiles**
+      * Über das __raise-statement__ kann man eine bestimmte Exception erzwingen (im Beispiel oben: _ValueError_)
+         * Quelle: [raise-statement](https://docs.python.org/3/tutorial/errors.html)
+      * Das __with-statement__ ersetzt COde, der sonst mit __try__...__finally__ geschrieben werden würde
+        * Quelle [with-statement](https://docs.python.org/2.5/whatsnew/pep-343.html)
+      * Beispiel: [Assertion für erwartete Exception](https://docs.pytest.org/en/3.0.1/assert.html) 
+      ``` 
+      def test_zero_division():
+        with pytest.raises(ZeroDivisionError):
+          1 / 0
+       ```
+   1. **paths/testdata/testfiles**
      * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
      * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
      * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
