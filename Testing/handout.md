@@ -106,7 +106,21 @@ pip install -U pytest
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
  1. **writing assertions**
-
+     * Das in Python inbegriffene __assert__ lässt sich auch mit pytest zum Abgleichen und Überprüfen verwenden
+     * [Beispiel youtube](https://www.youtube.com/watch?v=R7u8xWXCbGM): 
+     ```
+     # content of test_sample.py
+     def validate_age(age):
+      if age<0
+       raise ValueError("Age cannot be less than 0")
+       
+     def test_validate_age_valid_age():
+        validate_age(10)
+        
+     def test_validate_age_invalid_age():
+        validate_age(-1)
+       
+      ```
  1. **paths/testdata/testfiles**
      * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
      * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
