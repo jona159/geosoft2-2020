@@ -140,10 +140,10 @@ pip install -U pytest
      * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
      * einzelne Tests innerhalb eines Files lassen sich mit *pytest* + *Test-File* + *Testfunktionsname* ausführen
      
- 1. **temp dirs/files**
-
  1. **fixtures**
      * beschreibt die Umgebung in welcher der Test läuft, z.B. eine Datenbank
+  1. **temp dirs/files**
+      * __tmpdir__: fixture zum standardisierten Erstellen von temporary directories 
  1. **mocking/patching (engl. Mock=Attrape)**
      * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
         Abfrage durchführen möchte weil diese das Testen stark verlangsamen würde_
@@ -156,9 +156,11 @@ pip install -U pytest
        * _Dummy: Objekt, das weitergereicht, aber nicht benutzt wird_
        * _Fake: Objekt mit eingeschränkter Implementierung_
        * _Mock: Objekt das bei Funktionsaufrufen mit übergebenen Werten eine Rückgabe liefert (erfordert die Verwendung eines mocking-Frameworks)_
+     * Quelle: [wikipedia Mock-Objekt](https://de.wikipedia.org/wiki/Mock-Objekt)  
      * Pytest Mocking-Framework: __Pytest-Mock_
        Installation über: 
        ```
        pip install pytest-mock
        ```
+      * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606) 
  1. **test cache**
