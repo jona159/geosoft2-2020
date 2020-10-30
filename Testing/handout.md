@@ -9,6 +9,10 @@
     1. _Code implementieren, sodass Test erfolreich durchläuft_
     1. _Sicherstellen, dass alle Tests OK sind_
     1. _Test und Produktivcode werden refaktorisiert_
+Quellen: 
+ * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0)
+ * [Einführung in TDD](https://medium.com/hackernoon/introduction-to-test-driven-development-tdd-61a13bc92d92)
+ * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/)
 * __Vorteile von TDD:__
     * _gute Wartbarkeit und Qualität (kein ungetesteter Code, saubere Struktur, Minimierung der Redundanzen)_
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
