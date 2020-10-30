@@ -143,6 +143,7 @@ pip install -U pytest
  1. **fixtures**
      * beschreibt die Umgebung in welcher der Test läuft, z.B. eine Datenbank
   1. **temp dirs/files**
+      * [temporary directories and files](https://docs.pytest.org/en/stable/tmpdir.html)
       * __tmpdir__: fixture zum standardisierten Erstellen von temporary directories 
  1. **mocking/patching (engl. Mock=Attrape)**
      * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
