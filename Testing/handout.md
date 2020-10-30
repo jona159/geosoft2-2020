@@ -69,7 +69,8 @@ pip install -U pytest
 ```
 * [Pytest Dokumentation](https://docs.pytest.org/en/stable/contents.html)
  1. **Parallel Tests**
-      * _Tests sollen gleichzeitig laufen, um Zeit bei der Ausführung zu gewinnen_
+      * _Tests sollen gleichzeitig auf verschiedenen Systemen laufen, um Zeit bei der Ausführung zu gewinnen_
+      * _Bei unterschiedlichen Software-Versionen prüft man auf Konsistenz und mögliche auftretende Probleme_
       * __xdist__ _plugin für pytest installieren_
          * _Installation über:_
             ```
@@ -83,7 +84,13 @@ pip install -U pytest
           ```
           pytest -n 2
           ``` 
-          
+      * Quellen:
+          * [Parallel Testing Introduction](https://www.guru99.com/parallel-testing.html)
+          * [Python Parallel Testing Youtube](https://www.youtube.com/watch?v=IW_rR7Y6dbM)
+          * [Pytest Parallel](https://www.tutorialspoint.com/pytest/pytest_run_tests_in_parallel.htm)
+          * [xdist Dokumentation](https://docs.pytest.org/en/3.0.1/xdist.html) 
+          * [xdist Projektbeschreibung](https://pypi.org/project/pytest-xdist/)
+      
       
  1. **Test Suites**
 
