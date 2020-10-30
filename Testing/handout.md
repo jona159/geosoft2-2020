@@ -63,6 +63,11 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
     * [Stackoverflow](https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests)
 ## pytest
 * Framework zum einfachen Erstellen von skalierbaren Tests
+* Installation:
+```
+pip install -U pytest
+```
+* [Pytest Dokumentation](https://docs.pytest.org/en/stable/contents.html)
  1. **Parallel Tests**
       * _Tests sollen gleichzeitig laufen, um Zeit bei der Ausführung zu gewinnen_
       * __xdist__ _plugin für pytest installieren_
