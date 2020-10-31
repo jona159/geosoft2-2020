@@ -164,7 +164,7 @@ pip install -U pytest
      * weitere Anwendungsbereiche von mocking: 
         * _das zu testende Objekt liefert nicht-deterministische Ergebnisse, bspw: Uhrzeit_
         * _das echte Objekt existiert noch gar nicht_
-        * _schwierig auslösbares Verhalten_
+        * _schwierig auslösbares Verhalten (z.B. Netzwerkzugriff)_
         (bei Integrationstest ist mocking normalerweise nicht notwendig)
      * die wichtigsten Mocking-Typen: 
        * _Dummy: Objekt, das weitergereicht, aber nicht benutzt wird_
@@ -177,6 +177,9 @@ pip install -U pytest
        pip install pytest-mock
        ```
       * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606) 
+      * __Monkeypatching__ :
+         * monkeypatch ist Teil der pytest-mock library
+       
  1. **test cache**
      * Pytest Cache-Framework: __Pytest-Cache__
      * Installation: 
