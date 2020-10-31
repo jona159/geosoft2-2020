@@ -179,6 +179,9 @@ pip install -U pytest
       * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606) 
       * __Monkeypatching__ :
          * monkeypatch ist Teil der pytest-mock library
+         * Quellen:
+           * [Monkeypatching pytest doc](https://docs.pytest.org/en/stable/monkeypatch.html)
+           * [Monkeypatching Beispiele](https://codefellows.github.io/sea-python-401d7/lectures/mock.html) 
        
  1. **test cache**
      * Pytest Cache-Framework: __Pytest-Cache__
