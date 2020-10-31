@@ -152,6 +152,8 @@ pip install -U pytest
      * fixtures haben explizite Namen, sind modular und skalierbar
      * fixture definieren mit @pytest.fixture (_optional mit Parametern ,bspw. : @pytest.fixture(scope=module)_)
      * In pytest sind bereits eine Reihe von fixtures inbegriffen: [pytest fixtures](https://docs.pytest.org/en/stable/fixture.html)
+     * fixtures können auch andere fixtures aufrufen
+     * fixtures können auch getestet werden
        
        
   1. **temp dirs/files**
@@ -172,17 +174,44 @@ pip install -U pytest
        * _Mock: Objekt das bei Funktionsaufrufen mit übergebenen Werten eine Rückgabe liefert (erfordert die Verwendung eines mocking-Frameworks)_
      * Quelle: [wikipedia Mock-Objekt](https://de.wikipedia.org/wiki/Mock-Objekt)  
      * Pytest Mocking-Framework: __Pytest-Mock_
+     * stellt __mocker__ fixture zur Verfügung
        Installation über: 
        ```
        pip install pytest-mock
        ```
-      * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606) 
+      * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606)
+      * [Pytest Mock Youtube Vortrag](https://www.youtube.com/watch?v=k99HSHQDsi4)
+      * [Codefellows](https://codefellows.github.io/sea-python-401d7/lectures/mock.html)
+      * [github pytest-mock](https://github.com/pytest-dev/pytest-mock)
+      * [Beispiel Stackoverflow:](https://stackoverflow.com/questions/53434986/using-mocker-to-patch-with-pytest)
+      ```
+      import pytest
+
+
+     def sum(a, b):
+      return a + b
+
+
+     def test_sum1(mocker):
+      mocker.patch(__name__ + ".sum", return_value=9)
+      assert sum(2, 3) == 9
+
+
+    def test_sum2(mocker):
+     def crazy_sum(a, b):
+        return b + b
+
+      mocker.patch(__name__ + ".sum", side_effect=crazy_sum)
+      assert sum(2, 3) == 6
+     ``` 
+      
       * __Monkeypatching__ :
          * monkeypatch ist Teil der pytest-mock library
+         * das monkeypatch fixture stellt einige nützliche Hilfsfunktionen zur Verfügung (siehe Links) 
          * Quellen:
            * [Monkeypatching pytest doc](https://docs.pytest.org/en/stable/monkeypatch.html)
            * [Monkeypatching Beispiele](https://codefellows.github.io/sea-python-401d7/lectures/mock.html) 
-       
+                  
  1. **test cache**
      * Pytest Cache-Framework: __Pytest-Cache__
      * Installation: 
@@ -195,6 +224,7 @@ pip install -U pytest
      ```
      * Cache leeren:
      ```
-     pytest --clearcache
+     pytest --clear-cache
      ```
      * [Pytest Cache](https://pypi.org/project/pytest-cache/#:~:text=pytest%2Dcache%201.0&text=cache%20object%20which%20helps%20sharing,from%20the%20last%20run%20first.)
+     * [Cache Usage](https://docs.pytest.org/en/6.1.2/cache.html)
