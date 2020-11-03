@@ -205,7 +205,7 @@ pip install -U pytest
        ```
       * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606)
       * [Pytest Mock Youtube Vortrag](https://www.youtube.com/watch?v=k99HSHQDsi4) (ab 14:55 min)
-      * [Codefellows](https://codefellows.github.io/sea-python-401d7/lectures/mock.html)
+      * [Codefellows](https://codefellows.github.io/sea-python-401d7/lectures/mock.html) (tiefergehend)
       * [github pytest-mock](https://github.com/pytest-dev/pytest-mock) (tiefergehend)
       * [Beispiel Stackoverflow:](https://stackoverflow.com/questions/53434986/using-mocker-to-patch-with-pytest)
       ```
@@ -229,7 +229,7 @@ pip install -U pytest
       assert sum(2, 3) == 6
      ``` 
       
-      * __Monkeypatching__ :
+      * __Monkeypatching__ _(optional, nur bei Interesse anschauen)_ :
          * monkeypatch ist Teil der pytest-mock library
          * das monkeypatch fixture stellt einige nützliche Hilfsfunktionen zur Verfügung (siehe Links) 
          * Quellen:
