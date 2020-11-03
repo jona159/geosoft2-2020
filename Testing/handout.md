@@ -116,15 +116,15 @@ pip install -U pytest
 
  1. **Most Important CLI Instructions**
  
-    * pytest _(führt alle Tests im cd aus)_
-    * pytest --version _(zeigt die Version von pytest an)_
-    * pytest --fixtures _(zeigt verfügbare fixtures)_
-    * pytest --help oder pytest -h _(Hilfeaufruf)_
-    * pytest -x _(stoppt Testvorgang nachdem der erste Test fehlschlägt)_
-    * pytest --maxfail=x _(stoppt Testvorgang nachdem der x-te Test fehlschlägt)_
-    * pytest --lf _(führt die letzten fehlgeschlagenen Tests aus)_
-    * pytest exampletest_mod.py _(führt Tests im angegebenen Dokument aus)_
-    * pytest testing/ _(führt Tests im angebenen Ordner aus)_
+    * `pytest` _(führt alle Tests im cd aus)_
+    * `pytest --version` _(zeigt die Version von pytest an)_
+    * `pytest --fixtures` _(zeigt verfügbare fixtures)_
+    * `pytest --help oder pytest -h` _(Hilfeaufruf)_
+    * `pytest -x` _(stoppt Testvorgang nachdem der erste Test fehlschlägt)_
+    * `pytest --maxfail=x` _(stoppt Testvorgang nachdem der x-te Test fehlschlägt)_
+    * `pytest --lf` _(führt die letzten fehlgeschlagenen Tests aus)_
+    * `pytest exampletest_mod.py` _(führt Tests im angegebenen Dokument aus)_
+    * `pytest testing/` _(führt Tests im angebenen Ordner aus)_
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
  1. **writing assertions**
