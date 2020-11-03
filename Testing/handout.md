@@ -142,7 +142,10 @@ pip install -U pytest
      def test_function():
        assert f() == 4
        ``` 
-     * [Beispiel youtube](https://www.youtube.com/watch?v=R7u8xWXCbGM): 
+     
+      * Über das __raise-statement__ kann man eine bestimmte Exception erzwingen (im Beispiel oben: _ValueError_)
+         * Quelle: [raise-statement](https://docs.python.org/3/tutorial/errors.html)
+      * [Beispiel youtube](https://www.youtube.com/watch?v=R7u8xWXCbGM): 
      ```
      # content of test_sample.py
      def validate_age(age):
@@ -156,8 +159,6 @@ pip install -U pytest
         validate_age(-1)
        
       ```
-      * Über das __raise-statement__ kann man eine bestimmte Exception erzwingen (im Beispiel oben: _ValueError_)
-         * Quelle: [raise-statement](https://docs.python.org/3/tutorial/errors.html)
       * Das __with-statement__ ersetzt Code, der sonst mit __try__...__finally__ geschrieben werden würde
         * Quelle [with-statement](https://docs.python.org/2.5/whatsnew/pep-343.html)
       * Beispiel: [Assertion für erwartete Exception](https://docs.pytest.org/en/3.0.1/assert.html) 
