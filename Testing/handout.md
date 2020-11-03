@@ -133,7 +133,15 @@ pip install -U pytest
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
  1. **writing assertions**
  
-     * Das in Python inbegriffene __assert__ lässt sich auch mit pytest zum Abgleichen und Überprüfen verwenden
+     * Das in Python inbegriffene __assert__ lässt sich auch mit pytest zum Abgleichen und Überprüfen verwenden 
+     * [simples Beispiel assert, Test schlägt fehl](https://docs.pytest.org/en/stable/assert.html):
+     ```
+     def f(): 
+       return 3
+     
+     def test_function():
+       assert f() == 4
+       ``` 
      * [Beispiel youtube](https://www.youtube.com/watch?v=R7u8xWXCbGM): 
      ```
      # content of test_sample.py
