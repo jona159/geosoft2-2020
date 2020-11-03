@@ -157,10 +157,10 @@ pip install -U pytest
        
  1. **paths/testdata/testfiles**
  
-     * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
-     * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
-     * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
-     * einzelne Tests innerhalb eines Files lassen sich mit *pytest* + *Test-File* + *Testfunktionsname* ausführen
+     * Ausführen aller Tests in files mit Namen __...test.py__ und **test___.py** über `pytest` im current directory und in Subordnern
+     * Wenn man nicht im cd arbeiten möchte kann man ein directory mit `pytest` + *Pfad* angeben, z.B. : `pytest tests/../..`
+     * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: `pytest tests/../.. tests/test.py`
+     * einzelne Tests innerhalb eines Files lassen sich mit `pytest` + *Test-File* + *Testfunktionsname* ausführen
      * Quelle (Kapitel _Running Tests_): [pytest Quickstart](https://books.google.de/books?hl=de&lr=&id=aB9sDwAAQBAJ&oi=fnd&pg=PP1&dq=pytest+testsuite&ots=dEzwW_4us2&sig=e9VJktln_8igpFiEM5q4CAYkKwQ#v=onepage&q=pytest%20testsuite&f=false)
      
  1. **fixtures**
@@ -169,7 +169,7 @@ pip install -U pytest
        * Quelle: [codemaven.com](https://code-maven.com/temporary-files-and-directory-for-pytest)
      * fixtures initialisieren Testfunktionen als übergebene Argumente, sodass die Tests verlässlicher ausführbar, konsistenter und leichter wiederholbar werden
      * fixtures haben explizite Namen, sind modular und skalierbar
-     * fixture definieren mit @pytest.fixture (_optional mit Parametern ,bspw. : @pytest.fixture(scope=module)_)
+     * fixture definieren mit `@pytest.fixture` (_optional mit Parametern ,bspw. :_ `@pytest.fixture(scope=module)`)
      * In pytest sind bereits eine Reihe von fixtures inbegriffen: [pytest fixtures](https://docs.pytest.org/en/stable/fixture.html)
      * fixtures können auch andere fixtures aufrufen
      * fixtures können auch getestet werden
