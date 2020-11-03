@@ -1,6 +1,9 @@
 @jona159
+
 # Testing
+
 ## Test Driven Development (TDD) 
+
 * _Kennzeichnet sich dadurch, dass zuerst die Tests geschrieben werden und erst später die Implementierung der dazugehörigen Komponenten geschieht_
 * _Es wird kein Produktivcode geschrieben, es sei denn es existiert bereits ein Test welcher dies vorsieht_
 * _Zyklischer Ablauf:_
@@ -11,15 +14,20 @@
     1. _Test und Produktivcode werden refaktorisiert_
 
 * __Vorteile von TDD:__
+
     * _gute Wartbarkeit und Qualität (kein ungetesteter Code, saubere Struktur, Minimierung der Redundanzen)_
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
     
 * __Quellen:__ 
+
     * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0)
     * [Einführung in TDD](https://medium.com/hackernoon/introduction-to-test-driven-development-tdd-61a13bc92d92)
-    * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/)    
+    * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/) 
+    
 ## Unit Tests vs Integration Tests
+
  * __Unit Tests__
+ 
    * _Einzelne Codeeinheit die getestet werden soll (z.B. Funktion)_
    * _Testen auf dem niedrigsten Level_
    * _Simpler, schneller Entwurf_
@@ -57,11 +65,14 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
 ```
    
  * __Integration Tests__
+ 
    * _Zusammenhängende Systemkomponenten werden auf erfolgreiches Zusammenwirken getestet_
    * _Dabei sollen Module dem gewünschten Interaktionsprotokoll folgen_
  * Quelle: 
     * [Stackoverflow](https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests)
+    
 ## pytest
+
 * Framework zum einfachen Erstellen von skalierbaren Tests
 * Installation:
 ```
@@ -71,7 +82,9 @@ pip install -U pytest
 * [Pytest Tutorial Youtube 1 Std](https://www.youtube.com/watch?v=bbp_849-RZ4)
 * [Pytest Tutorial Youtube 20min](https://www.youtube.com/watch?v=byaxg00Gf9I)
 * [Pytest Quickstart Leseprobe](https://books.google.de/books?hl=de&lr=&id=aB9sDwAAQBAJ&oi=fnd&pg=PP1&dq=pytest+testsuite&ots=dEzwW_4us2&sig=e9VJktln_8igpFiEM5q4CAYkKwQ#v=onepage&q=pytest%20testsuite&f=false)
+
  1. **Parallel Tests**
+ 
       * _Tests sollen gleichzeitig auf verschiedenen Systemen laufen, um Zeit bei der Ausführung zu gewinnen_
       * _Bei unterschiedlichen Software-Versionen prüft man auf Konsistenz und mögliche auftretende Probleme_
       * __xdist__ _plugin für pytest installieren_
@@ -96,11 +109,13 @@ pip install -U pytest
       
       
  1. **Test Suites**
+ 
      * Eine Test Suite beschreibt im Detail eine Menge von Testfällen, sowie deren genauen Anwendungsziele [Test Suite Wikipedia](https://en.wikipedia.org/wiki/Test_suite)
      * pytest kann für die meisten bereits existierenden Test Suites verwendet werden
      * [Using pytest with an existing test suite](https://docs.pytest.org/en/latest/existingtestsuite.html)     
 
  1. **Most Important CLI Instructions**
+ 
     * pytest _(führt alle Tests im cd aus)_
     * pytest --version _(zeigt die Version von pytest an)_
     * pytest --fixtures _(zeigt verfügbare fixtures)_
@@ -113,6 +128,7 @@ pip install -U pytest
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
  1. **writing assertions**
+ 
      * Das in Python inbegriffene __assert__ lässt sich auch mit pytest zum Abgleichen und Überprüfen verwenden
      * [Beispiel youtube](https://www.youtube.com/watch?v=R7u8xWXCbGM): 
      ```
@@ -138,7 +154,9 @@ pip install -U pytest
         with pytest.raises(ZeroDivisionError):
           1 / 0
        ```
+       
  1. **paths/testdata/testfiles**
+ 
      * Ausführen aller Tests in files mit Namen ...test.py und test___.py über *pytest* im current directory und in Subordnern
      * Wenn man nicht im cd arbeiten möchte kann man ein directory mit *pytest* + *Pfad* angeben, z.B. : *pytest tests/../..*
      * Man kann auch mit einem Befehl mehrere directories/files angeben, z.B.: *pytest tests/../.. tests/test.py*
@@ -146,6 +164,7 @@ pip install -U pytest
      * Quelle (Kapitel _Running Tests_): [pytest Quickstart](https://books.google.de/books?hl=de&lr=&id=aB9sDwAAQBAJ&oi=fnd&pg=PP1&dq=pytest+testsuite&ots=dEzwW_4us2&sig=e9VJktln_8igpFiEM5q4CAYkKwQ#v=onepage&q=pytest%20testsuite&f=false)
      
  1. **fixtures**
+ 
      * Ein fixture ist die Umgebung in welcher der Test läuft, bspw. eine Datenbank 
        * Quelle: [codemaven.com](https://code-maven.com/temporary-files-and-directory-for-pytest)
      * fixtures initialisieren Testfunktionen als übergebene Argumente, sodass die Tests verlässlicher ausführbar, konsistenter und leichter wiederholbar werden
@@ -157,10 +176,13 @@ pip install -U pytest
        
        
   1. **temp dirs/files**
+  
       * [temporary directories and files](https://docs.pytest.org/en/stable/tmpdir.html)
       * __tmpdir__: fixture zum standardisierten Erstellen von temporary directories 
       * __tmp_path__ : fixture zum Erstellen eines eindeutigen temporary directory
+      
  1. **mocking/patching (engl. Mock=Attrape)**
+ 
      * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
         Abfrage durchführen möchte weil diese das Testen stark verlangsamen würde_
      * weitere Anwendungsbereiche von mocking: 
@@ -213,6 +235,7 @@ pip install -U pytest
            * [Monkeypatching Beispiele](https://codefellows.github.io/sea-python-401d7/lectures/mock.html) 
                   
  1. **test cache**
+ 
      * Pytest Cache-Framework: __Pytest-Cache__
      * Installation: 
      ```
