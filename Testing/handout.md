@@ -20,7 +20,7 @@
     
 * __Quellen:__ 
 
-    * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0)
+    * [Youtube Vortrag](https://www.youtube.com/watch?v=IvqX-HTd8o0) (v.a. ab 9:30min)
     * [Einführung in TDD](https://medium.com/hackernoon/introduction-to-test-driven-development-tdd-61a13bc92d92)
     * [TDD Vorteile](https://www.it-agile.de/wissen/agiles-engineering/testgetriebene-entwicklung-tdd/) 
     
