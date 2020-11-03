@@ -195,9 +195,9 @@ pip install -U pytest
        * _Fake: Objekt mit eingeschränkter Implementierung_
        * _Mock: Objekt das bei Funktionsaufrufen mit übergebenen Werten eine Rückgabe liefert (erfordert die Verwendung eines mocking-Frameworks)_
      * Quelle: [wikipedia Mock-Objekt](https://de.wikipedia.org/wiki/Mock-Objekt)  
-     * Pytest Mocking-Framework: __Pytest-Mock_
+     * Pytest Mocking-Framework: __Pytest-Mock__
      * stellt __mocker__ fixture zur Verfügung
-       Installation über: 
+     * Installation über: 
        ```
        pip install pytest-mock
        ```
