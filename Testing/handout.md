@@ -78,7 +78,8 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
 ```
 pip install -U pytest
 ```
-* __pip:__ (_"pip installs packages"_) Verwaltungsprogramm für Python packages
+* __pip:__ Verwaltungsprogramm für Python packages (_"pip installs packages"_)
+
 * [Pytest Dokumentation](https://docs.pytest.org/en/stable/contents.html)
 * _tiefergehende Quellen:_
   * [Pytest Tutorial Youtube 1 Std](https://www.youtube.com/watch?v=bbp_849-RZ4)
