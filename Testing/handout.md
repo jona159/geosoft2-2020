@@ -204,9 +204,9 @@ pip install -U pytest
        pip install pytest-mock
        ```
       * [pytest mocking](https://medium.com/analytics-vidhya/mocking-in-python-with-pytest-mock-part-i-6203c8ad3606)
-      * [Pytest Mock Youtube Vortrag](https://www.youtube.com/watch?v=k99HSHQDsi4)
+      * [Pytest Mock Youtube Vortrag](https://www.youtube.com/watch?v=k99HSHQDsi4) (ab 14:55 min)
       * [Codefellows](https://codefellows.github.io/sea-python-401d7/lectures/mock.html)
-      * [github pytest-mock](https://github.com/pytest-dev/pytest-mock)
+      * [github pytest-mock](https://github.com/pytest-dev/pytest-mock) (tiefergehend)
       * [Beispiel Stackoverflow:](https://stackoverflow.com/questions/53434986/using-mocker-to-patch-with-pytest)
       ```
       import pytest
