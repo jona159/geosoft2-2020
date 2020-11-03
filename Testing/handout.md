@@ -189,7 +189,7 @@ pip install -U pytest
         * _das zu testende Objekt liefert nicht-deterministische Ergebnisse, bspw: Uhrzeit_
         * _das echte Objekt existiert noch gar nicht_
         * _schwierig auslösbares Verhalten (z.B. Netzwerkzugriff)_
-        (bei Integrationstest ist mocking normalerweise nicht notwendig)
+        * (bei Integrationstests ist mocking normalerweise nicht notwendig)
      * die wichtigsten Mocking-Typen: 
        * _Dummy: Objekt, das weitergereicht, aber nicht benutzt wird_
        * _Fake: Objekt mit eingeschränkter Implementierung_
