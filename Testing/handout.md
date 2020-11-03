@@ -79,6 +79,7 @@ QUnit.test( "Coin Test in HTML (is fair coin?)", function( assert ) {
 pip install -U pytest
 ```
 * [Pytest Dokumentation](https://docs.pytest.org/en/stable/contents.html)
+* _tiefergehende Quellen:_
 * [Pytest Tutorial Youtube 1 Std](https://www.youtube.com/watch?v=bbp_849-RZ4)
 * [Pytest Tutorial Youtube 20min](https://www.youtube.com/watch?v=byaxg00Gf9I)
 * [Pytest Quickstart Leseprobe](https://books.google.de/books?hl=de&lr=&id=aB9sDwAAQBAJ&oi=fnd&pg=PP1&dq=pytest+testsuite&ots=dEzwW_4us2&sig=e9VJktln_8igpFiEM5q4CAYkKwQ#v=onepage&q=pytest%20testsuite&f=false)
