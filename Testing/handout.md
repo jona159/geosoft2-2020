@@ -229,7 +229,8 @@ pip install -U pytest
       assert sum(2, 3) == 6
      ``` 
       
-      * __Monkeypatching__ _(optional, nur bei Interesse anschauen)_ :
+      * **//**_(optional, nur bei Interesse anschauen)_
+      * __Monkeypatching__ :
          * monkeypatch ist Teil der pytest-mock library
          * das monkeypatch fixture stellt einige nützliche Hilfsfunktionen zur Verfügung (siehe Links) 
          * Quellen:
@@ -252,4 +253,5 @@ pip install -U pytest
      pytest --clear-cache
      ```
      * [Pytest Cache](https://pypi.org/project/pytest-cache/#:~:text=pytest%2Dcache%201.0&text=cache%20object%20which%20helps%20sharing,from%20the%20last%20run%20first.)
-     * [Cache Usage](https://docs.pytest.org/en/6.1.2/cache.html)
+       (empfohlen) 
+     * [Cache Usage](https://docs.pytest.org/en/6.1.2/cache.html) (tiefergehend)
