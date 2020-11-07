@@ -178,6 +178,7 @@ pip install -U pytest
      
  1. **fixtures**
  
+     * Fixures sind Funktionen, die vor dem Test laufen dem sie zugeordnet sind 
      * Ein fixture ist die Umgebung in welcher der Test läuft, bspw. eine Datenbank 
        * Quelle: [codemaven.com](https://code-maven.com/temporary-files-and-directory-for-pytest)
      * fixtures initialisieren Testfunktionen als übergebene Argumente, sodass die Tests verlässlicher ausführbar, konsistenter und leichter wiederholbar werden
@@ -190,6 +191,7 @@ pip install -U pytest
        
   1. **temp dirs/files**
   
+      * Temporary directory: Ordner zum Speichern von temporären Dateien
       * [temporary directories and files](https://docs.pytest.org/en/stable/tmpdir.html)
       * __tmpdir__: fixture zum standardisierten Erstellen von temporary directories 
       * __tmp_path__ : fixture zum Erstellen eines eindeutigen temporary directory
