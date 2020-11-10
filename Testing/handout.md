@@ -131,6 +131,18 @@ pip install -U pytest
     * `pytest testing/` _(führt Tests im angebenen Ordner aus)_
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
+      
+    * __Marker__: 
+    
+      * Alle markierten Tests werden ausgeführt, nicht markierte Tests werden vernachlässigt
+      * Beispiel für Markierung : 
+      ```
+      @pytest.mark.webtest
+      def test_send_http():
+      pass 
+      ```
+      * Ausführen des markierten Tests mit: `pytest -v -m webtest` 
+      * Ausführen aller nicht markierten Tests mit: `pytest -v -m "not webtest" `
  1. **writing assertions**
  
      * Das in Python inbegriffene __assert__ lässt sich auch mit pytest zum Abgleichen und Überprüfen verwenden 
