@@ -11,7 +11,7 @@
     1. _Test schlägt (quasi zum Beweis) mindestens einmal fehl_
     1. _gerade soviel Code implementieren, sodass Test erfolreich durchläuft_
     1. _Sicherstellen, dass alle Tests bestehen (,,pass")_
-    1. _Test und Produktivcode werden refaktorisiert_
+    1. _Test und Produktivcode werden refaktorisiert (verbessert)_
 
 * __Vorteile von TDD:__
 
@@ -19,6 +19,7 @@
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
     * _Entwickler denken über Testszenarien nach, bevor sie den Code implementieren_
     * _schnelle Offenlegung von schlecht entworfenem, monolithischem Code_
+    * _Tester sind gegenüber dem Code nicht voreingenommen und fördern oftmals Mängel zutage, die den Entwicklern nicht aufgefallen sind_
     
     
 * __Quellen:__ 
