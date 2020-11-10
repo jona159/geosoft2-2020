@@ -6,6 +6,7 @@
 
 * _Kennzeichnet sich dadurch, dass zuerst die Tests geschrieben werden und erst später die Implementierung der dazugehörigen Komponenten geschieht_
 * _Es wird kein Produktivcode geschrieben, es sei denn es existiert bereits ein Test welcher dies vorsieht_
+* _Begriff __Codeabdeckung:__ prozentualer Anteil des Gesamtcodes, der durch Tests ausgeführt wird_
 * _Zyklischer Ablauf:_
     1. _Test schreiben_
     1. _Test schlägt (quasi zum Beweis) mindestens einmal fehl_
@@ -20,6 +21,7 @@
     * _Entwickler denken über Testszenarien nach, bevor sie den Code implementieren_
     * _schnelle Offenlegung von schlecht entworfenem, monolithischem Code_
     * _Tester sind gegenüber dem Code nicht voreingenommen und fördern oftmals Mängel zutage, die den Entwicklern nicht aufgefallen sind_
+    * _Abhängigkeiten von Funktionen können umgangen oder nachgeahmt werden, sodass man sich auf den Code konzentrieren kann der getestet werden soll_
     
     
 * __Quellen:__ 
@@ -216,6 +218,7 @@ pip install -U pytest
  
      * _wird verwendet wenn sich Platzhalter statt der echten Objekte beim Testen besser eignen, zum Beispiel bei API-Abfragen, da man beim Testen nicht jedesmal wieder die API-
         Abfrage durchführen möchte weil diese das Testen stark verlangsamen würde_
+     * _UnitTests von Funktionen mit zu vielen Abhängigkeiten werden vereinfacht_   
      * weitere Anwendungsbereiche von mocking: 
         * _das zu testende Objekt liefert nicht-deterministische Ergebnisse, bspw: Uhrzeit_
         * _das echte Objekt existiert noch gar nicht_
