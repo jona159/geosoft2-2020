@@ -8,15 +8,18 @@
 * _Es wird kein Produktivcode geschrieben, es sei denn es existiert bereits ein Test welcher dies vorsieht_
 * _Zyklischer Ablauf:_
     1. _Test schreiben_
-    1. _Test auf Fehler überprüfen_
-    1. _Code implementieren, sodass Test erfolreich durchläuft_
-    1. _Sicherstellen, dass alle Tests OK sind_
+    1. _Test schlägt (quasi zum Beweis) mindestens einmal fehl_
+    1. _gerade soviel Code implementieren, sodass Test erfolreich durchläuft_
+    1. _Sicherstellen, dass alle Tests bestehen (,,pass")_
     1. _Test und Produktivcode werden refaktorisiert_
 
 * __Vorteile von TDD:__
 
     * _gute Wartbarkeit und Qualität (kein ungetesteter Code, saubere Struktur, Minimierung der Redundanzen)_
     * _Erhöhte Effektivität und Effizienz bei der Codeerstellung (gewünschtes Ergebnis bei minimaler Anzahl an geschriebenen Zeilen)_
+    * _Entwickler denken über Testszenarien nach, bevor sie den Code implementieren_
+    * _schnelle Offenlegung von schlecht entworfenem, monolithischem Code_
+    
     
 * __Quellen:__ 
 
