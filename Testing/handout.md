@@ -135,6 +135,7 @@ pip install -U pytest
     * `pytest --lf` _(führt die letzten fehlgeschlagenen Tests aus)_
     * `pytest exampletest_mod.py` _(führt Tests im angegebenen Dokument aus)_
     * `pytest testing/` _(führt Tests im angebenen Ordner aus)_
+    * `pytest --traceconfig` _Aktive Plugins anzeigen_
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
       
