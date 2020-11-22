@@ -136,6 +136,8 @@ pip install -U pytest
     * `pytest exampletest_mod.py` _(führt Tests im angegebenen Dokument aus)_
     * `pytest testing/` _(führt Tests im angebenen Ordner aus)_
     * `pytest --traceconfig` _Aktive Plugins anzeigen_
+    * `pytest --cov -report term-missing --cov = "package"`_Missing lines without test coverage_
+    * `pytest -mpl` _pytest image testing_
     * __Quelle__:
       * [pytest CLI](https://docs.pytest.org/en/stable/usage.html)
       
